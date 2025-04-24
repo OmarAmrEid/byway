@@ -12,31 +12,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: SingleChildScrollView( // Wrap with SingleChildScrollView
+          child: SingleChildScrollView(
             child: Column(
               children: [
-                // Profile Section
                 const ProfileSection(),
                 
-                // Search Bar
                 const SearchBarWidget(),
                 
-                // Top Categories
                 const TopCategoriesSection(),
                 
-                // Top Courses
                 const TopCoursesSection(),
                 
-                // Top Instructors
                 const TopInstructorsSection(),
                 
-                // Add other content below
               ],
             ),
           ),
         ),
         
-        // Bottom Navigation Bar
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: 3,
           items: const [
@@ -108,7 +101,6 @@ class ProfileSection extends StatelessWidget {
   }
 }
 
-// Search Bar Widget
 class SearchBarWidget extends StatelessWidget {
   const SearchBarWidget({super.key});
 
@@ -136,7 +128,6 @@ class SearchBarWidget extends StatelessWidget {
   }
 }
 
-// Top Categories Section
 class TopCategoriesSection extends StatelessWidget {
   const TopCategoriesSection({super.key});
 
@@ -191,7 +182,6 @@ class TopCategoriesSection extends StatelessWidget {
   }
 }
 
-// Category Card Widget
 class _CategoryCard extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -231,7 +221,6 @@ class _CategoryCard extends StatelessWidget {
   }
 }
 
-// Top Courses Section
 class TopCoursesSection extends StatelessWidget {
   const TopCoursesSection({super.key});
 
@@ -295,7 +284,6 @@ class TopCoursesSection extends StatelessWidget {
   }
 }
 
-// Course Card Widget
 class _CourseCard extends StatelessWidget {
   final String image;
   final String title;
@@ -329,7 +317,7 @@ class _CourseCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
+              color: Color.fromRGBO(150, 150, 150, 0.2),
               spreadRadius: 2,
               blurRadius: 5,
             ),
@@ -369,7 +357,7 @@ class _CourseCard extends StatelessWidget {
                   const Icon(Icons.star, color: Colors.amber, size: 16),
                   const Icon(Icons.star, color: Colors.amber, size: 16),
                   const Icon(Icons.star, color: Colors.amber, size: 16),
-                  Icon(Icons.star, color: rating >= 4.5 ? Colors.amber : Colors.amber.withOpacity(0.5), size: 16),
+                  Icon(Icons.star, color: rating >= 4.5 ? Colors.amber : Color.fromRGBO(255, 215, 0, 0.5), size: 16),
                   const SizedBox(width: 5),
                   Text('($ratingCount Ratings)'),
                 ],
@@ -399,7 +387,6 @@ class _CourseCard extends StatelessWidget {
   }
 }
 
-// Top Instructors Section
 class TopInstructorsSection extends StatelessWidget {
   const TopInstructorsSection({super.key});
 
@@ -450,7 +437,6 @@ class TopInstructorsSection extends StatelessWidget {
   }
 }
 
-// Instructor Card Widget
 class _InstructorCard extends StatelessWidget {
   final String image;
   final String name;
@@ -476,7 +462,7 @@ class _InstructorCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
+              color: Color.fromRGBO(150, 150, 150, 0.2),
               spreadRadius: 2,
               blurRadius: 5,
             ),
