@@ -1,16 +1,8 @@
-# byway
+Byway
 
-A new Flutter project.
+home screen:
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![WhatsApp Image 2025-04-24 at 00 22 52_952272d8](https://github.com/user-attachments/assets/af1bf027-461c-4b00-8277-40ad927e8c38) ![WhatsApp Image 2025-04-24 at 00 22 52_3c145918](https://github.com/user-attachments/assets/e36208b2-ae28-4cdb-a55a-e2d16bf27f6f)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
